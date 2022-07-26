@@ -1,0 +1,116 @@
+*{padding:0px;
+margin: 0px;
+box-sizing: border-box;}
+
+html{font-family: 'Roboto', sans-serif;}
+
+.header{background-color: rgb(13, 13, 63);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    border: solid rgb(123, 73, 170) 3.5px;
+    position: sticky; top: 0px;}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+
+.menu{display: flex;
+justify-items:center;
+background-color:rgb(115, 190, 190);
+padding: 5px    ;
+margin: 1rem;
+border-radius: 2rem;
+font-weight: bold;
+font-size: 1rem;
+}
+
+
+.menu ul li:hover{background-color:  rgb(109, 86, 131);
+border-radius: 2rem;
+margin: 1px;
+padding: 1px;
+font-weight: bold;}
+
+
+.subTitulo h4{color: rgb(145, 223, 223);
+}
+
+.button {
+	padding: 8px;
+    background: white;
+    color: #282B39;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 #00A8E8;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.button:active {
+	transform: translate(4px, 4px);
+ 	box-shadow: none;
+}
+
+.contenido{
+display: grid;
+grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
+grid-template-rows:0.5fr 0.5fr 1fr;
+grid-template-areas: "h4 h4 img img img" 
+                      "p p img img img"
+                      "button button img img img";
+background-color: rgb(88, 104, 134);
+border: solid black;
+
+}
+
+.contenido h4{grid-area:h4;
+font-size: 2rem;
+padding: 1.5rem;
+margin: 3.5rem; 
+border-radius: 2rem;
+border: solid black;
+background-color: rgb(105, 81, 133);
+color: whitesmoke;
+}
+
+.contenido p{grid-area: p;
+border: solid black;
+padding: 1rem;
+margin: 2rem;}
+
+
+.contenido .img{ grid-area:img;
+    display: flex;
+    padding: 0.1rem;
+    height: 70vh;
+  
+ 
+}
+
+.contenido .button{grid-area: button;
+    display: flex;
+    margin: 1rem;
+    background-color:rgb(115, 190, 190);
+    border-radius: 0.3rem;
+    color: black;
+    border: solid 0.5rem rgb(82, 17, 82);
+
+}
+
+
+section{
+padding: 3rem;
+background-color:rgb(88, 104, 134);}
+
+
+
+footer{background-color: rgb(13, 13, 63);
+color: whitesmoke;
+border: solid rgb(123, 73, 170) 3.5px;}
+
+
