@@ -58,11 +58,11 @@ font-weight: bold;}
 
 .contenido{
 display: grid;
-grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
+grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
 grid-template-rows:0.5fr 0.5fr 1fr;
-grid-template-areas: "h4 h4 img img img" 
-                      "p p img img img"
-                      "button button img img img";
+grid-template-areas: "h4 h4 img img" 
+                      "p p img img"
+                      "button button img img";
 background-color: rgb(88, 104, 134);
 border: solid black;
 
@@ -86,7 +86,6 @@ margin: 2rem;}
 
 .contenido .img{ grid-area:img;
     display: flex;
-    padding: 0.1rem;
     height: 70vh;
   
  
@@ -113,4 +112,95 @@ footer{background-color: rgb(13, 13, 63);
 color: whitesmoke;
 border: solid rgb(123, 73, 170) 3.5px;}
 
+@media (max-width:576px) and (min-width:280px){
+    .contenido{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-areas: "h4 img" 
+                              "p p"
+                              "button button";
+        background-color: rgb(88, 104, 134);
+        border: solid black;}
 
+        .contenido h4{grid-area:h4;
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 1rem 1rem 22rem; 
+            border-radius: 2rem;
+            border: solid black;
+            background-color: rgb(105, 81, 133);
+            color: whitesmoke;
+            }
+            
+            .contenido p{grid-area: p;
+            font-size: 13px;}
+            
+            
+            .contenido .img{ grid-area:img;
+                display: flex;
+                padding: 0.1rem;
+                height: 24vh;
+              
+             
+            }
+            
+            .contenido .button{grid-area: button;
+                display: flex;
+                margin: 1rem;
+                background-color:rgb(115, 190, 190);
+                border-radius: 0.3rem;
+                color: black;
+                border: solid 0.5rem rgb(82, 17, 82);
+            
+            }
+            
+            
+}
+
+@media (max-width:768px) and (min-width:577px){
+    .contenido{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        grid-template-rows:0.5fr 0.5fr 1fr;
+        grid-template-areas: "h4 img img" 
+                              "p p img"
+                              "button button img img img";
+        background-color: rgb(88, 104, 134);
+        border: solid black;
+        
+        }
+        
+        .contenido h4{grid-area:h4;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin: 3.5rem; 
+        border-radius: 2rem;
+        border: solid black;
+        background-color: rgb(105, 81, 133);
+        color: whitesmoke;
+        }
+        
+        .contenido p{grid-area: p;
+        border: solid black;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 15px}
+        
+        
+        .contenido .img{ grid-area:img;
+            display: flex;
+            padding: 0.1rem;
+            height: 35vh;
+          
+        }
+        
+        .contenido .button{grid-area: button;
+            display: flex;
+            margin: 1rem;
+            background-color:rgb(115, 190, 190);
+            border-radius: 0.3rem;
+            color: black;
+            border: solid 0.5rem rgb(82, 17, 82);}
+        
+        }
